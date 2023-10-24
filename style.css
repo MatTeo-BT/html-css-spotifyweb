@@ -10,8 +10,8 @@ body{
     display: flex;
 }
 .navbar{
-    height: 1000px;  
-    /* width: 15%; */
+    height: 100%;  
+    /* width: 15%;  */
     background-color: #000000;
     color: white;
     padding: 30px;
@@ -25,6 +25,10 @@ body{
     flex-direction: column; 
     justify-content: space-between;
 }
+.flex-row{
+    display: flex;
+    /* justify-content: space-between; */
+}
 .logo{
     width: 70%;
 }
@@ -33,13 +37,24 @@ body{
     vertical-align: middle;
 }
 .banner{
-    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    /* height: 100px; */
     background-color: #000000;
     width: 100%;
 }
+button{
+    border-radius: 2rem;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 35px;
+    margin: 25px 0 20px 0;
+    background-color: #070B12;
+}
 .bar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
     height: 50px;
     width: 700px; 
     color: white;
@@ -47,5 +62,21 @@ body{
 main{
    background-color: #141922; 
    width: 1000vw;
-   
+   height: 1000vh;
+   color: white;
+}
+.tracks-container{
+    margin: 20px 0 100px 0;
+}
+.tracks{
+    width: calc(100% / 6);
+    height: 200px;
+    background-color: darkorchid;
+}
+.mix-container{
+    margin-bottom: 50px;
+}
+footer{
+    height: 200px;
+    background-color: aqua;
 }

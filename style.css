@@ -1,0 +1,51 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+border: 1px solid black;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+}
+.navbar{
+    height: 1000px;  
+    /* width: 15%; */
+    background-color: #000000;
+    color: white;
+    padding: 30px;
+}
+.navbar p{
+    opacity: .5;
+    line-height: 30px;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+.logo{
+    width: 70%;
+}
+.navbar p img{
+    width: 15%;
+    vertical-align: middle;
+}
+.banner{
+    height: 100px;
+    background-color: #000000;
+    width: 100%;
+}
+.bar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 700px; 
+    color: white;
+}
+main{
+   background-color: #141922; 
+   width: 1000vw;
+   
+}

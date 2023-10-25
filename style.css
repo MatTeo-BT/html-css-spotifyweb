@@ -13,11 +13,12 @@ body{
     display: flex;
     flex-wrap: wrap;  
 }
-.wrapper *{
+/* .wrapper *{
     border: 1px solid black; 
-}
+} */
 header{
-    width: 15vw; 
+    width: 10vw; 
+    line-height: 55px;
 }
 .navbar{
     height: 100%;  
@@ -40,7 +41,7 @@ ul{
     display: flex;
 }
 .logo{
-    width: 70%;
+    width: 50%;
 }
 .navbar p img{
     width: 15%;
@@ -67,31 +68,56 @@ button{
     height: 50px;
     width: 700px; 
     color: white;
+    opacity: .5;
+    font-size: 13px;
 }
 main{
    background-color: #141922; 
-   width: 85vw;
+   width: 90vw;
    height: calc(100vh - 90px);
    color: white;
    overflow: scroll;
 }
 .tracks-container{
-    margin: 20px 0 100px 0;
+    margin-top: 20px;
 }
 .tracks{
     width: calc(100% / 6);
-    height: 200px;
-    background-color: darkorchid;
+    /* height: 200px;  */
     margin-left: 15px;
 }
-.mix-container{
-    margin-bottom: 50px;
+.track-title{
+    display: flex;
+    text-align: center; 
 }
-
+.for-you h2,
+p{
+    line-height: 40px;
+}
+.for-you p{
+    opacity: .3;
+}
+.mix-container{
+    margin-top: 30px;
+}
+.tracks img{
+    width: 100%;
+}
+.popular{
+    margin-top: 40px ;
+}
+.popular h2,
+p{
+    line-height: 40px;
+}
+.popular p{
+    opacity: .3;
+}
 footer{
     height: 90px;
     width: 100%;
     background-color: #282828;
+    color: white;
 }  
 .footer-container{
     display: flex;
@@ -99,15 +125,24 @@ footer{
     height: 100%;
 }
 .lateral{
+    display: flex;
     width: 25%;
-    background-color: darkgreen;
     height: 100%;
+    align-items: center;
 }
 .central{
     width: 50%;
     height: 100%;
     background-color: darkred;
 }
+.lateral img{
+    /* width: 50%; */
+    height: 100%;
+}
+.lateral i{
+    padding: 25px;
+}
+
 @media screen and (max-width: 992px) {
     .tracks-container{
         display: flex;

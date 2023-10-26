@@ -46,6 +46,9 @@ ul{
 .logo{
     width: 50%;
 }
+.logo-small{
+    display: none;
+}
 .navbar p img{
     width: 15%;
     vertical-align: middle;
@@ -120,6 +123,7 @@ footer{
     width: 100%;
     background-color: #282828;
     color: white;
+    /* position: fixed; */
 }  
 .footer-container{
     display: flex;
@@ -151,13 +155,45 @@ footer{
         display: flex;
         flex-wrap: wrap;
     }
+    header{
+        width: 10vw;
+    }
 }
 @media screen and (max-width: 768px) {
-    
+    header{
+        width: 10vw;
+    }
 }
 @media screen and (max-width: 576px) {
     header.navbar{
         width: 80px;
     }
-    
+    .logo-small{
+        display: block;
+        width: 100%;
+    }
+    .tracks-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bar{
+        flex-wrap: wrap;
+    }
+    .logo{
+        display: none;
+    }
+    .navbar div p,
+    ul, 
+    h4{
+        display: none;
+    }
+    .username p{
+        display: none;
+    }
+    main{
+        max-width: 576px;
+    }
+    .navbar img{
+        width: 100%;
+    }
 }

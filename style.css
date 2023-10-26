@@ -32,6 +32,9 @@ ul{
     line-height: 30px;
     list-style-type: none;
 }
+/* .navbar p > img{
+    border: 2px solid lime;
+} */
 .flex-column{
     display: flex;
     flex-direction: column; 
@@ -86,9 +89,8 @@ main{
     /* height: 200px;  */
     margin-left: 15px;
 }
-.track-title{
-    display: flex;
-    text-align: center; 
+article{
+    text-align: center;
 }
 .for-you h2,
 p{
@@ -144,9 +146,7 @@ footer{
 }
 
 @media screen and (max-width: 992px) {
-    header{
-        background-color: crimson;
-    }
+   
     .tracks-container{
         display: flex;
         flex-wrap: wrap;
